@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "track",
+			"path": "src/track"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.ejs": "html",
+			"cmath": "cpp"
+		}
+	}
+}
