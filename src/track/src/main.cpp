@@ -6,8 +6,8 @@
 //GPIO define
 const int setBtn = 5;  // GPIO5 (D5)
 
+
 Location setLocation, currentLocation;
-// volatile bool BtnPress = false;  // To track the button press
 volatile bool tracking = false;  // To track the tracking state
 
 
@@ -47,15 +47,15 @@ void setup() {
 }
 
 void loop() {
-  float burglarizeDistance = 0;
+  float theftDistance = 0;
 
   if (tracking) {
     Serial.println("Tracking...");
-    burglarizeDistance = calHarvesineDistance(setLocation, currentLocation);
+    theftDistance = calHarvesineDistance(setLocation, currentLocation);
 
-    if (burglarizeDistance > 20) {
+    if (theftDistance > 20) {
       //emergency warning
-    } else if (burglarizeDistance > 5) {
+    } else if (theftDistance > 5) {
       //soft warning
     }
     
