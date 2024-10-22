@@ -1,5 +1,6 @@
 #include <math.h>
 #include "gps.h"
+
 #define PI 3.14159265358979323846
 
 float calHarvesineDistance (Location setLoc, Location curLoc) {
